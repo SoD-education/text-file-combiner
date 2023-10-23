@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
+<html>
+  <!-- The root element of an HTML page -->
+
+  <head>
+    <!-- Contains meta-information about the document -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <title>File Combiner</title>
+    <!-- Defines the title of the document (shown in browser's title bar or tab) -->
+
+    <!-- Link element to include external CSS stylesheet file -->
+    <!-- "href" attribute specifies the location of the CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Contains the content that is visible to the user -->
+
+    <!-- A div element with class "container", used as a container for other HTML elements -->
+    <div class="container">
+      <!-- A div for the left column of the application -->
+      <div class="left-column">
+        <!-- Heading for the application -->
+        <h1 class="title">Text File Combiner</h1>
+
+        <!-- Button for selecting files -->
+        <!-- "id" is a unique identifier for the button element -->
+        <button id="select-files">Select Files</button>
+
+        <!-- Button for saving the combined file -->
+        <button id="save-file">Save Combined File</button>
+      </div>
+
+      <!-- A div for the right column of the application -->
+      <div class="right-column">
+        <!-- An unordered list to show the instructions for using the application -->
+        <ul id="file-list">
+          <!-- Each list item contains a step in the instructions -->
+          <li class="empty-list">INSTRUCTIONS</li>
+          <li class="empty-list">
+            1. Click the "Select Files" button on the left.
+          </li>
+          <li class="empty-list">
+            2. Choose at least two files with a
+            <span>.txt</span>
+            extension.
+          </li>
+          <li class="empty-list">3. Click the "Save Combined File" button.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Link to the JavaScript file that contains the functionality of the application -->
+    <script src="renderer.js"></script>
+  </body>
+  <!-- End of the content that is visible to the user -->
+</html>
+<!-- End of the HTML document -->

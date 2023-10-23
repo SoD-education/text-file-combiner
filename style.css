@@ -1,0 +1,160 @@
+/* Set the background color of the entire page to a dark blue */
+body {
+  background-color: #212e57;
+  /* Use the Arial font or a generic sans-serif font */
+  font-family: Arial, sans-serif;
+  /* Arrange elements vertically in a column */
+  display: flex;
+  flex-direction: column;
+  /* Center items horizontally and vertically within the body */
+  align-items: center;
+  justify-content: center;
+  /* Set the height of the body to 100% of the viewport height */
+  height: 100vh;
+  /* Remove any margin around the body */
+  margin: 0;
+}
+
+/* Create a container element for content with a width and height of 80% */
+.container {
+  width: 80%;
+  height: 80%;
+  /* Arrange elements horizontally */
+  display: flex;
+}
+
+/* Style the left column of the container */
+.left-column {
+  /* Set the width to 30% of the container width */
+  width: 30%;
+  /* Set the background color to a dark blue shade */
+  background-color: #172b4d;
+  /* Add padding around the content */
+  padding: 20px;
+  /* Add a small margin on the right side */
+  margin-right: 10px;
+  /* Set the text color to white */
+  color: white;
+}
+
+/* Style the right column of the container */
+.right-column {
+  /* Set the width to 70% of the container width */
+  width: 70%;
+  /* Set the background color to a darker blue shade */
+  background-color: #12253b;
+  /* Add padding around the content */
+  padding: 20px;
+  /* Add a small margin on the left side */
+  margin-left: 10px;
+  /* Enable vertical scrolling for overflowed content */
+  overflow-y: auto;
+}
+
+/* Style the title element */
+.title {
+  /* Create a gradient background using multiple colours */
+  background: -webkit-linear-gradient(
+    left,
+    #e53935,
+    #fb8c00,
+    #ffb300,
+    #43a047,
+    #1e88e5,
+    #5e35b1,
+    #8e24aa
+  );
+  /* Clip the background to the shape of the text */
+  -webkit-background-clip: text;
+  /* Make the text transparent */
+  -webkit-text-fill-color: transparent;
+  /* Center the text horizontally */
+  text-align: center;
+  /* Add a stroke around the text */
+  -webkit-text-stroke-width: 0.5px;
+  /* Set the stroke color to white */
+  -webkit-text-stroke-color: white;
+  /* Add a shadow effect to the text */
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Style the button element */
+button {
+  /* Set the background color to a green shade */
+  background-color: #4caf50;
+  /* Set the text color to white */
+  color: white;
+  /* Make the font bold */
+  font-weight: bold;
+  /* Add padding around the button */
+  padding: 15px 32px;
+  /* Center the text horizontally */
+  text-align: center;
+  /* Make the button an inline element */
+  display: inline-block;
+  /* Set the font size to 16 pixels */
+  font-size: 16px;
+  /* Add margin on the top and bottom, and left and right */
+  margin: 4px 2px;
+  /* Change the cursor to a pointer on hover */
+  cursor: pointer;
+  /* Remove the button border */
+  border: none;
+  /* Add a shadow effect to the button */
+  box-shadow: 2px 2px 5px black;
+  /* Set the border radius to create rounded corners */
+  border-radius: 2rem;
+}
+
+/* Style the disabled button */
+.disabled {
+  /* Set the background color to a light gray */
+  background-color: #ccc !important;
+  /* Set the text color to a dark gray */
+  color: #3a3a3a;
+  /* Change the cursor to "not-allowed" */
+  cursor: not-allowed;
+  /* Reduce the opacity of the button */
+  opacity: 0.5;
+  /* Remove the box shadow */
+  box-shadow: none;
+}
+
+/* Style unordered lists */
+ul {
+  /* Remove padding and margin */
+  padding: 0;
+  margin: 0;
+  /* Set the text color to white */
+  color: white;
+}
+
+/* Style specific list items with the class "empty-list" */
+ul li.empty-list {
+  /* Remove the list-style bullet */
+  list-style: none;
+  /* Add padding at the bottom */
+  padding-bottom: 1rem;
+}
+
+/* Style the first occurrence of the "empty-list" class */
+ul li.empty-list:nth-of-type(1) {
+  /* Make the text bold */
+  font-weight: bold;
+  /* Add extra padding at the bottom */
+  padding-bottom: 2rem;
+}
+
+/* Style the element with the ID "save-file" */
+#save-file {
+  /* Add margin on the top */
+  margin-top: 1rem;
+  /* Set the background color to a dark orange */
+  background-color: #a77210;
+}
+
+/* Style all span elements */
+span {
+  /* Make the text bold */
+  font-weight: bold;
+}
